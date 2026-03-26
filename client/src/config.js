@@ -1,0 +1,1 @@
+export const API = "https://giri-logistics-backend.onrender.com";
