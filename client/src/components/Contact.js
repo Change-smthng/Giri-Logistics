@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { API } from '../config';
 import './Contact.css';
 
 const WHATSAPP_NUMBER = '919876543210'; // ← update to real number
@@ -15,7 +16,7 @@ export default function Contact() {
 
     try {
       // 1. Save to MongoDB via Express API
-      const res = await fetch('/api/enquiry', {
+      const res = await fetch(`${API}/api/enquiry`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
