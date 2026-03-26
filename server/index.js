@@ -9,7 +9,9 @@ const enquiryRoutes = require('./routes/enquiry');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "https://giri-logistics.vercel.app"
+}));
 app.use(express.json());
 
 // Routes
