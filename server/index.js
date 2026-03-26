@@ -15,13 +15,9 @@ app.use(express.json());
 // Routes
 app.use('/api/enquiry', enquiryRoutes);
 
-// Serve React frontend in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-  app.get('*', (req, res) =>
-    res.sendFile(path.join(__dirname, '../client/build/index.html'))
-  );
-}
+app.get('/', (req, res) => {
+  res.send('API running 🚀');
+});
 
 // MongoDB connection
 const PORT = process.env.PORT || 5000;
