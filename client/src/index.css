@@ -1,0 +1,26 @@
+:root {
+  --black: #0a0a0a;
+  --charcoal: #141414;
+  --steel: #1e2228;
+  --orange: #f06a00;
+  --orange-bright: #ff7b1a;
+  --orange-glow: rgba(240, 106, 0, 0.18);
+  --white: #f5f3ef;
+  --muted: #8a8a8a;
+  --border: rgba(255, 255, 255, 0.07);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}

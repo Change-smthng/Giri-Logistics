@@ -1,0 +1,26 @@
+.footer {
+  background: var(--charcoal);
+  border-top: 1px solid var(--border);
+  padding: 2rem 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-logo-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-giri     { color: var(--orange); }
+.footer-logistics { color: var(--white); }
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
