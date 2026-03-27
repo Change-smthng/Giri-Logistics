@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { API } from '../config';
 import './Contact.css';
 
-const WHATSAPP_NUMBER = '919876543210'; // ← update to real number
+const WHATSAPP_NUMBER = '917891379066'; // ← update to real number
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', phone: '', fromCity: '', toCity: '', message: '' });
