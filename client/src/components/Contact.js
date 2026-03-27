@@ -58,8 +58,8 @@ export default function Contact() {
 
           <div className="contact-details">
             {[
-              { icon: '📞', label: 'Phone', value: <a href="tel:+919876543210">+91 98765 43210</a> },
-              { icon: '✉️', label: 'Email', value: <a href="mailto:info@girilogistics.in">info@girilogistics.in</a> },
+              { icon: '📞', label: 'Phone', value: <a href="tel:+917891379066">+91 7891379066</a> },
+              { icon: '✉️', label: 'Email', value: <a href="mailto:giri.logistics2016@gmail.com ">giri.logistics2016@gmail.com </a> },
               { icon: '💬', label: 'WhatsApp', value: <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a> },
               { icon: '📍', label: 'Office', value: 'Transport Nagar, Bhopal, MP – 462001' },
               { icon: '🕐', label: 'Hours', value: 'Mon–Sat: 8:00 AM – 8:00 PM' },
