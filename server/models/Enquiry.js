@@ -7,6 +7,11 @@ const enquirySchema = new mongoose.Schema(
     fromCity: { type: String, trim: true },
     toCity: { type: String, trim: true },
     message: { type: String, trim: true },
+    status: {
+      type: String,
+      enum: ['new', 'in-progress', 'closed'],
+      default: 'new',
+    },
   },
   { timestamps: true }
 );
