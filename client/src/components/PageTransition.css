@@ -1,0 +1,82 @@
+.page-transition {
+  position: relative;
+}
+
+.pt-route-view {
+  transition: opacity 0.2s ease;
+}
+
+.pt-route-view--loading {
+  opacity: 0.82;
+}
+
+.pt-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: rgba(10, 10, 10, 0.52);
+}
+
+.pt-road-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 3px;
+  transform: translateY(18px);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    var(--orange) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  box-shadow: 0 0 16px rgba(240, 106, 0, 0.28);
+}
+
+.pt-truck-lane {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.45));
+}
+
+.pt-truck-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border: 1px solid rgba(240, 106, 0, 0.45);
+  background: rgba(20, 20, 20, 0.95);
+}
+
+.pt-truck-gif {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+.pt-truck-fallback {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.pt-truck-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.pt-content {
+  position: relative;
+}
